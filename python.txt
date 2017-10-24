@@ -1,0 +1,5 @@
+1.从list获得变量名
+    vars()[list[0]]
+2.str() int() String和Int转换
+3.strip() ltrip() rtrip() replace(' ','')去空格
+4.迭代器 for n,item in enumerate(items):

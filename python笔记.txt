@@ -1,0 +1,39 @@
+尾递归优化
+*a *kw
+set
+r
+decode
+not
+
+L = range(1, 100, 2)
+firstHalf = L[:len(L)/2]
+
+[i for i in range(0, 100) if "3" in str(i)]
+
+itervalues() iteritems() enumerate
+
+items()会生成一个list，iteritems()直接迭代，更省内存
+
+函数赋予一个变量才可以进行遍历
+
+MapReduce: Simplified Data Processing on Large Clusters
+
+id() 查看地址
+
+print filter(lambda x:0 not in map(lambda t: x%t, range(2,x-1)), range(1, 100))
+
+sorted([36, 5, 12, 9, 21], lambda x, y: y - x)
+
+把两个路径合成一个时，不要直接拼字符串，而要通过os.path.join()函数，这样可以正确处理不同操作系统的路径分隔符。
+os.path.join('/Users/michael', 'testdir')
+'/Users/michael/testdir'
+
+# 对文件重命名:
+>>> os.rename('test.txt', 'test.py')
+# 删掉文件:
+>>> os.remove('test.py')
+>>> os.path.split('/Users/michael/testdir/file.txt')
+('/Users/michael/testdir', 'file.txt')
+>>> os.path.splitext('/path/to/file.txt')
+('/path/to/file', '.txt')
+

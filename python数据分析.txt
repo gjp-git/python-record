@@ -1,0 +1,14 @@
+1.绘图问题
+    重新打开 plt.figure()
+    显示 plt.show()
+2.pandas数据重塑
+    http://www.jianshu.com/p/4e443a852623
+    stack 过程表示将数据集的列旋转为行，同理 unstack 过程表示将数据的行旋转为列
+3.pd.read_table()报错
+    ParserWarning: Falling back to the 'python' engine because the 'c' engine does not support regex separators (separators > 1 char and different from '\s+' are interpreted as regex); you can avoid this warning by specifying engine='python'.
+    
+    users = pd.read_table('D:/$Python data analysis/ml-1m/users.dat',sep='::',header=None,names=unames)改为
+    users = pd.read_table('D:/$Python data analysis/ml-1m/users.dat',sep='::',header=None,names=unames,engine = 'python')
+4.matplotlib标签乱码
+    plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
+    plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
